@@ -1,0 +1,121 @@
+body {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  padding: 2em;
+  border-bottom: 1px solid lightgray;
+}
+
+.logo {
+  width: 7em;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+.home-container {
+  background-image: url("../assets/img/hero.jpg");
+  height: 455px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.forme {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 80px;
+  pointer-events: none;
+}
+
+.home-ready {
+  height: 220px;
+  width: 360px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 3px;
+  font-size: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 75px;
+  box-shadow: 0px 0px 2px rgba(17, 17, 17, 0.24);
+}
+
+.home-ready button {
+  height: 45px;
+  width: 187px;
+  background-color: #2baeb7;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 0 14px;
+  margin-top: 32px;
+}
+
+.annonces {
+  width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.card-size-brand {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.card-price-size-brand span:first-child {
+  font-size: 14px;
+}
+.card-price-size-brand span:not(:first-child) {
+  font-size: 12px;
+  color: #999999;
+}
+
+.card-container {
+  width: 235px;
+  padding: 0 6px 16px;
+  cursor: pointer;
+}
+.card-container div:last-child img {
+  height: 360px;
+  width: 235px;
+  object-fit: cover;
+}
+
+.card-avatar-username {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-avatar-username > img {
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card-avatar-username > span {
+  color: #999999;
+  font-size: 12px;
+}
